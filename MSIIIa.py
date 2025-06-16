@@ -14,7 +14,7 @@ col_rename = {
     'Nombre Dependencia Jerárquica (SEREMI / Servicio de Salud)': 'servicio_salud',
     'Nombre Comuna': 'comuna'
 }
-df_est = pd.read_excel(r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\ESTABLECIMIENTOS\Establecimientos DEIS MINSAL 03-06-2025.xlsx", skiprows=1, usecols=col_est)
+df_est = pd.read_excel(r"Establecimientos\Establecimientos DEIS MINSAL 03-06-2025.xlsx", skiprows=1, usecols=col_est)
 df_est = df_est.rename(columns=col_rename)
 df_ms3a = df_ms.loc[df_ms.MetaSanitaria == 'MSIIIa']
 df_ms3a = df_ms3a.merge(df_est, on='IdEstablecimiento', how='left')
