@@ -46,7 +46,7 @@ df_ms3a['Porcentaje'] = df_ms3a['Numerador'] / df_ms3a['Denominador']
 df_ms3a['codigo_nombre'] = df_ms3a['IdEstablecimiento'] + ' - ' + df_ms3a['nombre_establecimiento']
 
 # Título del dashboard
-st.title('Meta III.A: Control con Enfoque de Riesgo odontológico en población de 0 a 9 años​')
+st.title('Meta III.A: Control con Enfoque de Riesgo odontológico en población de 0 a 9 años')
 
 st.subheader("Filtros en Cascada")
 
